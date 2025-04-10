@@ -1,0 +1,188 @@
+/* Global Styles */
+:root {
+    --primary: #111;
+    --white: #fff;
+    --red: #e63946;
+    --gray: #ccc;
+    --font: 'Poppins', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font);
+    background-color: var(--primary);
+    color: var(--white);
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--red);
+    letter-spacing: 2px;
+  }
+  
+  nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+  }
+  
+  /* Landing Hero */
+  .hero {
+    background: url('https://media.about.nike.com/image-downloads/cf68f541-fc92-4373-91cb-086ae0fe2f88/002-nike-logos-swoosh-white.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px;
+  }
+  
+  .hero-content h1 {
+    font-size: 64px;
+    color: var(--red);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  
+  .cta {
+    padding: 12px 28px;
+    background: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
+  .cta:hover {
+    background: #a4161a;
+  }
+  
+  /* Products */
+  .products {
+    padding: 60px 40px;
+    background-color: #121212;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--red);
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .product-card {
+    background: #1e1e1e;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product-card p {
+    color: var(--gray);
+  }
+  
+
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #000;
+    font-size: 14px;
+    color: var(--gray);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1,
+    .jordan-hero .hero-content h1 {
+      font-size: 42px;
+    }
+  
+    .hero-content p,
+    .jordan-hero .hero-content p {
+      font-size: 16px;
+    }
+  
+    .auth-box {
+      padding: 30px;
+    }
+  }
+
+  /* Small Smartphones */
+@media (max-width: 480px) {
+    .hero-content h1,
+    .jordan-hero .hero-content h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  
+    .hero-content p,
+    .jordan-hero .hero-content p {
+      font-size: 14px;
+    }
+  
+    .auth-box {
+      padding: 20px 15px;
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+  

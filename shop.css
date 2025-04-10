@@ -1,0 +1,195 @@
+/* Root & Base */
+:root {
+    --black: #0f0f0f;
+    --white: #ffffff;
+    --red: #e63946;
+    --gray: #999;
+    --font: 'Poppins', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font);
+    background: var(--black);
+    color: var(--white);
+  }
+  
+  /* Header */
+  header {
+    background: #000;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--red);
+    letter-spacing: 2px;
+  }
+  
+  nav a {
+    color: var(--white);
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--red);
+  }
+  
+  /* Hero Banner */
+  .shop-hero {
+    background: url('https://external-preview.redd.it/air-jordan-is-finally-deflating-v0-vnygvda86L46J-7kj8Uv3HlPZuzszl3C30xLp5Yie38.jpg?auto=webp&s=5904aea468cdc900b012a528eb02c3ceb2104555') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px;
+  }
+  
+  .shop-hero .content {
+    max-width: 600px;
+  }
+  
+  .shop-hero h1 {
+    font-size: 56px;
+    color: var(--red);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .shop-hero p {
+    font-size: 20px;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  /* Products Grid */
+  .products {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--red);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .card {
+    background: #1b1b1b;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.05);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: var(--gray);
+  }
+  
+  .card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .card button:hover {
+    background: #a4161a;
+  }
+  
+  /* Footer */
+  footer {
+    background: #000;
+    padding: 30px 0;
+    text-align: center;
+    color: var(--gray);
+    font-size: 14px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .shop-hero h1 {
+      font-size: 36px;
+    }
+  
+    .shop-hero p {
+      font-size: 16px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 30px;
+    }
+  
+    nav a {
+      margin-left: 15px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .shop-hero h1 {
+      font-size: 28px;
+    }
+  
+    .shop-hero p {
+      font-size: 14px;
+    }
+  
+    nav a {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  
+    header {
+      padding: 15px 20px;
+      gap: 10px;
+    }
+  }
+  
+  
